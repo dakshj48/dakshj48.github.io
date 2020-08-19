@@ -3,9 +3,6 @@ import React from 'react';
 const TechnicalSkills = () => {
   return (
     <div>
-      <h1>
-        Technical Skills
-      </h1>
       <p>
         <b>
           Languages:

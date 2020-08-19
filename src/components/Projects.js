@@ -3,9 +3,6 @@ import React from 'react';
 const Projects = () => {
   return (
     <div>
-      <h1>
-        Projects
-      </h1>
       <div>
         <ul>
           <li>
@@ -31,7 +28,7 @@ const Projects = () => {
                 target="_blank" rel="noopener noreferrer"> 
                   n-grams, RNN
                 </a> 
-                and
+                {" "} and {" "}
                 <a href="https://colab.research.google.com/drive/1FHsFYf7P5pOL-URpOl5l_1ZlbflMTyG2"
                 target="_blank" rel="noopener noreferrer">
                   GPT-2

@@ -3,9 +3,6 @@ import React from "react";
 const HonorsAndAwards = () => {
   return (
     <div>
-      <h1>
-        Honors and Awards
-      </h1>
       <ul>
         <li>
           <b>
