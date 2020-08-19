@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Experience = () => {
   return (
@@ -47,4 +47,4 @@ const Experience = () => {
   )
 }
 
-export default Experience
+export default Experience;

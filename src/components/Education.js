@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Education = () => {
   return (
@@ -28,12 +28,13 @@ const Education = () => {
           </tr>
         </tbody>
       </table>
-      <h4>
-        Coursework: Web Development, Machine Learning, Natural Language Processing, Networks, Formal Language Theory, 
-        Game Programming, Algorithms, Operating Systems
-      </h4>
+      <b>
+        Coursework:
+      </b>
+      {" "} Web Development, Machine Learning, Natural Language Processing, Networks, Formal Language Theory, 
+      Game Programming, Algorithms, Operating Systems
     </div>
   )
 }
 
-export default Education
+export default Education;
