@@ -3,38 +3,100 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import EmailIcon from '@material-ui/icons/Email';
 import PhoneIcon from '@material-ui/icons/Phone';
+import Button from '@material-ui/core/Button';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
+import TableContainer from '@material-ui/core/TableContainer';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableRow from '@material-ui/core/TableRow';
+import Paper from '@material-ui/core/Paper';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(.01),
+    },
+  },
+  button: {
+    textTransform: 'none'
+  },
+  table: {
+    minWidth: 0,
+  },
+}));
+
+const NoBorderTableCell = withStyles({
+  root: {
+    borderBottom: 'none',
+  }
+})(TableCell)
 
 const Contacts = () => {
+  const classes = useStyles();
+
   return (
-    <div>
-      <table >
-        <tbody>
-          <tr>
-            <td width="150px">
-            <LinkedInIcon fontSize="medium"/>
-              <a href="https://www.linkedin.com/in/jain-daksh/" target="_blank" rel="noopener noreferrer">
-                LinkedIn
+    <div className={classes.root}>
+      <TableContainer component={Paper}>
+      <Table className={classes.table}>
+        <TableBody>
+          <TableRow>
+            <NoBorderTableCell align='center'>
+              <a 
+                href='https://www.linkedin.com/in/jain-daksh/' 
+                target='_blank' 
+                rel='noopener noreferrer'
+              >
+                <Button
+                  color='default'
+                  startIcon={<LinkedInIcon />}
+                  className={classes.button}
+                >
+                  jain-daksh
+                </Button>
               </a>
-            </td>
-            <td width="150px">
-              <GitHubIcon fontSize="medium" />
-              <a href="https://github.com/dakshj48" target="_blank" rel="noopener noreferrer">
-                Github
+            </NoBorderTableCell>
+            <NoBorderTableCell align='center'>
+              <a 
+                href='https://github.com/dakshj48' 
+                target='_blank' 
+                rel='noopener noreferrer'
+              >
+                <Button
+                  color='default'
+                  startIcon={<GitHubIcon />}
+                  className={classes.button}
+                >
+                  dakshj48
+                </Button>
               </a>
-            </td>
-            <td width="150px">
-              <EmailIcon fontSize="email" />
-              <a href="mailto:dakshjain48@gmail.com">
-                Email
+            </NoBorderTableCell>
+            <NoBorderTableCell align='center'>
+              <a href='mailto:dakshjain48@gmail.com'>
+                <Button
+                  color='default'
+                  startIcon={<EmailIcon />}
+                  className={classes.button}
+                >
+                  dakshjain48@gmail.com
+                </Button>
               </a>
-            </td>
-            <td width="150px">
-              <PhoneIcon fontSize="medium"/>
-              (312) 369-9090
-            </td>
-          </tr>
-        </tbody>
-      </table>
+            </NoBorderTableCell>
+            <NoBorderTableCell align='center'>
+              <a href='tel:+13123699090'>
+                <Button
+                  color='default'
+                  startIcon={<PhoneIcon />}
+                  className={classes.button}
+                >
+                  (312) 369-9090
+                </Button>
+              </a>
+            </NoBorderTableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
+      </TableContainer>
     </div>
   )
 }

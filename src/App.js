@@ -6,13 +6,12 @@ import Projects from './components/Projects';
 import TechnicalSkills from './components/TechnicalSkills';
 import HonorsAndAwards from './components/HonorsAndAwards';
 import Contacts from './components/Contacts';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { withStyles } from '@material-ui/core/styles';
 import Fab from '@material-ui/core/Fab';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import Tooltip from '@material-ui/core/Tooltip';
@@ -62,18 +61,18 @@ const App = () => {
 
   return (
       <div className={classes.root}>
-        <h1>
+        <h1 align='center'>
           Daksh Jain
         </h1>
         <Contacts />
         <Accordion
-          expanded={expanded.includes("education")}
-          onChange={handleChange("education")}
+          expanded={expanded.includes('education')}
+          onChange={handleChange('education')}
         >
           <LeftAccordionSummary
             expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="education-header"
+            aria-controls='panel1a-content'
+            id='education-header'
             IconButtonProps={{edge: 'start'}}
           >
             <Typography className={classes.heading}>
@@ -87,13 +86,13 @@ const App = () => {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          expanded={expanded.includes("experience")}
-          onChange={handleChange("experience")}
+          expanded={expanded.includes('experience')}
+          onChange={handleChange('experience')}
         >
           <LeftAccordionSummary
             expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="experience-header"
+            aria-controls='panel1a-content'
+            id='experience-header'
             IconButtonProps={{edge: 'start'}}
           >
             <Typography className={classes.heading}>
@@ -107,13 +106,13 @@ const App = () => {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          expanded={expanded.includes("projects")}
-          onChange={handleChange("projects")}
+          expanded={expanded.includes('projects')}
+          onChange={handleChange('projects')}
         >
           <LeftAccordionSummary
             expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="projects-header"
+            aria-controls='panel1a-content'
+            id='projects-header'
             IconButtonProps={{edge: 'start'}}
           >
             <Typography className={classes.heading}>
@@ -127,13 +126,13 @@ const App = () => {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          expanded={expanded.includes("technicalskills")}
-          onChange={handleChange("technicalskills")}
+          expanded={expanded.includes('technicalskills')}
+          onChange={handleChange('technicalskills')}
         >
           <LeftAccordionSummary
             expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="technicalskills-header"
+            aria-controls='panel1a-content'
+            id='technicalskills-header'
             IconButtonProps={{edge: 'start'}}
           >
             <Typography className={classes.heading}>
@@ -147,13 +146,13 @@ const App = () => {
           </AccordionDetails>
         </Accordion>
         <Accordion
-          expanded={expanded.includes("honors")}
-          onChange={handleChange("honors")}
+          expanded={expanded.includes('honors')}
+          onChange={handleChange('honors')}
         >
           <LeftAccordionSummary
             expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="honorsandawards-header"
+            aria-controls='panel1a-content'
+            id='honorsandawards-header'
             IconButtonProps={{edge: 'start'}}
           >
             <Typography className={classes.heading}>
@@ -168,17 +167,16 @@ const App = () => {
         </Accordion>
         {
           expanded.length < 5 &&
-          <Tooltip title="Expand All" aria-label="expand">
-            <Fab color="secondary" className={classes.fab} onClick={expandAll}>
-              {/* Expand All */}
+          <Tooltip title='Expand All' aria-label='expand'>
+            <Fab color='secondary' className={classes.fab} onClick={expandAll}>
               <ExpandMoreIcon />
             </Fab>
           </Tooltip>
         }
         {
           expanded.length === 5 &&
-          <Tooltip title="Collapse All" aria-label="collapse">
-            <Fab color="secondary" className={classes.fab} onClick={() => setExpanded([])}>
+          <Tooltip title='Collapse All' aria-label='collapse'>
+            <Fab color='secondary' className={classes.fab} onClick={() => setExpanded([])}>
               <ExpandLessIcon />
             </Fab>
           </Tooltip>     
