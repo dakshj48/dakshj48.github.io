@@ -2,6 +2,7 @@ import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
+import '../App.css'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,7 +23,7 @@ const Projects = () => {
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <b>
-              <a href='https://github.com/dakshj48/Bloglist' target='_blank' rel='noopener noreferrer'>
+              <a href='https://github.com/dakshj48/Bloglist' target='_blank' rel='noopener noreferrer' color='green'>
                 Full-stack web app for listing blogs
               </a>
             </b>

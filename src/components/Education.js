@@ -23,6 +23,36 @@ const Education = () => {
         <Grid item xs={12} sm={6}>
           <Paper className={classes.paper}>
             <b>
+              Master of Science at the University of Massachusetts, Amherst
+            </b>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <Paper className={classes.paper}>
+            Sep. 2020 - Dec. 2021
+          </Paper>
+        </Grid>
+        <Grid item xs={12} sm={12}>
+          <Paper className={classes.paper}>
+          <i>
+            Master's in Computer Science
+          </i>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} sm={12}>
+          <Paper className={classes.paper}>
+            <b>
+              Current Coursework:
+            </b>
+            {' '} Neural Networks, Computer Vision, Advanced Algorithms
+          </Paper>
+        </Grid>
+      </Grid>
+
+      <Grid container spacing={1}>
+        <Grid item xs={12} sm={6}>
+          <Paper className={classes.paper}>
+            <b>
               Bachelor of Science at the University of Massachusetts, Amherst
             </b>
           </Paper>
