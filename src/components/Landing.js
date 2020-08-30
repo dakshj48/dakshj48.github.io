@@ -1,5 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Avatar from '@material-ui/core/Avatar';
+import Photo from '../static/profile_photo.jpeg'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,14 +17,20 @@ const useStyles = makeStyles((theme) => ({
   h2: {
     fontSize: '150%',
     marginTop: '0px',
-  }
+  },
+  photo: {
+    height: '7em',
+    width: '7em'
+  },
+
 }));
 
 const Landing = () => {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <div align='center' className={classes.root}>
+      <Avatar alt='Daksh Jain' src={Photo} className={classes.photo} component={'span'}/>
       <span align='center' className={classes.h1}>
         <b>
           Daksh Jain

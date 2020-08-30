@@ -2,7 +2,6 @@ import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import '../App.css'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Projects = () => {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <div className={classes.root}>
@@ -23,7 +22,11 @@ const Projects = () => {
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <b>
-              <a href='https://github.com/dakshj48/Bloglist' target='_blank' rel='noopener noreferrer' color='green'>
+              <a 
+                href='https://github.com/dakshj48/Bloglist' 
+                target='_blank' 
+                rel='noopener noreferrer'
+              >
                 Full-stack web app for listing blogs
               </a>
             </b>
@@ -47,13 +50,19 @@ const Projects = () => {
             <ul>
               <li>
                 Used NLP algorithms (
-                <a href='https://colab.research.google.com/drive/1pdU-T8UZY4V3Iqls_uMWWK42zMvDd_EP' 
-                target='_blank' rel='noopener noreferrer'> 
+                <a 
+                  href='https://colab.research.google.com/drive/1pdU-T8UZY4V3Iqls_uMWWK42zMvDd_EP' 
+                  target='_blank' 
+                  rel='noopener noreferrer'
+                > 
                   n-grams, RNN
                 </a> 
                 {' '} and {' '}
-                <a href='https://colab.research.google.com/drive/1FHsFYf7P5pOL-URpOl5l_1ZlbflMTyG2'
-                target='_blank' rel='noopener noreferrer'>
+                <a 
+                  href='https://colab.research.google.com/drive/1FHsFYf7P5pOL-URpOl5l_1ZlbflMTyG2'
+                  target='_blank' 
+                  rel='noopener noreferrer'
+                >
                   GPT-2
                 </a>
                 ) to generate movie plots given context and genre.

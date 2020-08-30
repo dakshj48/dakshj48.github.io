@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const HonorsAndAwards = () => {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <div className={classes.root}>

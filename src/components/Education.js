@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Education = () => {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <div className={classes.root}>

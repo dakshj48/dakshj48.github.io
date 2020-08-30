@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     margin: 0,
     top: 'auto',
     right: 20,
-    bottom: 20,
+    bottom: 25,
     left: 'auto',
     position: 'fixed',
   }
