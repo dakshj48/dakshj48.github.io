@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Landing from './components/Landing';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
+import Contacts from './components/Contacts';
 import Typography from '@material-ui/core/Typography';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
 import Box from '@material-ui/core/Box';
 import PropTypes from 'prop-types';
 import background from './static/background.jpg';
@@ -39,13 +37,6 @@ TabPanel.propTypes = {
   value: PropTypes.any.isRequired,
 };
 
-function a11yProps(index) {
-  return {
-    id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
-  };
-}
-
 const darkTheme = createMuiTheme({
   palette: {
     type: 'dark',
@@ -53,12 +44,6 @@ const darkTheme = createMuiTheme({
 });
 
 const App = () => {
-  const [value, setValue] = useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
   return (
     <div className='App Site'>
       <ThemeProvider theme={darkTheme}>
@@ -66,20 +51,12 @@ const App = () => {
         <div className='Site-content'>
           <div className='App-header'>
             <img src={background} className='bg' alt='12'/>
-            <AppBar position='static' color='inherit' component='div'>
-              <Tabs value={value} onChange={handleChange} component='div'>
-                <Tab label='About Me' {...a11yProps(0)} component='div' />
-                <Tab label='Resume' {...a11yProps(1)} component='div' />
-              </Tabs>
-            </AppBar>
+            <Contacts />
           </div>
           <div className='main'>
-            <TabPanel value={value} index={0} component={'div'}>
-              <Landing />
-            </TabPanel>
-            <TabPanel value={value} index={1} component={'div'}>
-              <Resume />
-            </TabPanel>
+            <br />
+            <Landing />
+            <Resume />
           </div>
         </div>
         <div>

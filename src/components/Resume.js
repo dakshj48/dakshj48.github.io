@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Education from './Education';
 import Experience from './Experience';
 import Projects from './Projects';
 import TechnicalSkills from './TechnicalSkills';
 import HonorsAndAwards from './HonorsAndAwards';
-import Contacts from './Contacts';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
@@ -39,8 +38,12 @@ const LeftAccordionSummary = withStyles({
     },
 })(AccordionSummary);
 
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+
 const Resume = () => {  
   const classes = useStyles();
+  const ref = useRef(null)
+  const executeScroll = () => scrollToRef(ref)
 
   const handleChange = (panel) => (event, newExpanded) => {
     if (expanded.includes(panel)) {
@@ -48,6 +51,7 @@ const Resume = () => {
     }
     else {
       setExpanded(expanded.concat(panel));
+      executeScroll();
     }
   };
 
@@ -59,10 +63,11 @@ const Resume = () => {
 
   return (
       <div className={classes.root}>
-        <Contacts />
+        <br />
         <Accordion
           expanded={expanded.includes('education')}
           onChange={handleChange('education')}
+          ref={ref}
         >
           <LeftAccordionSummary
             expandIcon={<ExpandMoreIcon />}

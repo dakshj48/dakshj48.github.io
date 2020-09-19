@@ -36,9 +36,10 @@ const Contacts = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    // <div className={classes.root}>
+    <>
       <TableContainer component={Paper}>
-      <Table className={classes.table}>
+      <Table className={classes.table} padding='checkbox'>
         <TableBody>
           <TableRow>
             <NoBorderTableCell align='center'>
@@ -97,7 +98,8 @@ const Contacts = () => {
         </TableBody>
       </Table>
       </TableContainer>
-    </div>
+      </>
+    // </div>
   )
 }
 

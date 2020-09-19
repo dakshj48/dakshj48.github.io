@@ -42,11 +42,11 @@ const Landing = () => {
       </span>
       <br />
       <br />
-      <span align='center'>
+      <span align='center' style={{ fontSize: '125%' }}>
         A result-oriented first year master's student who aspires to become a top software engineer. 
       </span>
       <br />
-      <span align='center'>
+      <span align='center' style={{ fontSize: '125%' }}>
         Passionate about computers, technology, and gaming.
       </span>
     </div>
