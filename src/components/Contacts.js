@@ -36,8 +36,7 @@ const Contacts = () => {
   const classes = useStyles();
 
   return (
-    // <div className={classes.root}>
-    <>
+    <div className={classes.root}>
       <TableContainer component={Paper}>
       <Table className={classes.table} padding='checkbox'>
         <TableBody>
@@ -98,8 +97,7 @@ const Contacts = () => {
         </TableBody>
       </Table>
       </TableContainer>
-      </>
-    // </div>
+    </div>
   )
 }
 
