@@ -68,8 +68,8 @@ const Projects = () => {
                 ) to generate movie plots given context and genre.
               </li>
               <li>
-                Utilized MongoDB, Express, React and Node.js (MERN) for the development and Heroku to
-                deploy it to the web.
+                Utilized Pytorch and Google Colab to meet the computational needs of learning data from
+                thousands of movies.
               </li>
             </ul>
           </Paper>
