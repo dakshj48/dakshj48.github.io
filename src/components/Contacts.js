@@ -72,13 +72,13 @@ const Contacts = () => {
               </a>
             </NoBorderTableCell>
             <NoBorderTableCell align='center'>
-              <a href='mailto:dakshjain48@gmail.com'>
+              <a href='mailto:contact@dakshj.com'>
                 <Button
                   color='default'
                   startIcon={<EmailIcon />}
                   className={classes.button}
                 >
-                  dakshjain48@gmail.com
+                  contact@dakshj.com
                 </Button>
               </a>
             </NoBorderTableCell>
