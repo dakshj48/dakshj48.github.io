@@ -24,9 +24,20 @@ const HonorsAndAwards = () => {
             <b>
               Baystate Scholarship:
             </b> 
-            {' '} Scholarship awarded to computer science undergrads at UMass who excelled and are pursuing master's in computer science at UMass.
+            {' '} Scholarship awarded to undergraduates who excelled in computer science and are
+            pursuing master's in computer science at UMass.
           </Paper>
         </Grid>
+        <Grid item xs={12}>
+          <Paper className={classes.paper}>
+            <b>
+              Dean's List:
+            </b> 
+            {' '} Honor awarded to undergraduates who complete a minimum of 12 graded credits while maintaining a high grade point average. 
+            Received all semesters.
+          </Paper>
+        </Grid>
+      </Grid>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <b>
@@ -35,16 +46,6 @@ const HonorsAndAwards = () => {
             {' '} Scholarship awarded to admitted freshmen whose academic and personal achievements are especially strong.
           </Paper>
         </Grid>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>
-            <b>
-              Dean's List:
-            </b> 
-            {' '} Honor awarded to undergrads who complete a minimum of 12 graded credits while maintaining a high grade point average. 
-            Received all semesters.
-          </Paper>
-        </Grid>
-      </Grid>
     </div>
   )
 }
