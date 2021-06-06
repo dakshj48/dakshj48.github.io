@@ -28,26 +28,31 @@ const Education = () => {
         </Grid>
         <Grid item xs={12} sm={6}>
           <Paper className={classes.paper}>
-            Sep. 2020 - Dec. 2021
+            Aug. 2020 - May 2022
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={12}>
+        <Grid item xs={12} sm={6}>
           <Paper className={classes.paper}>
           <i>
             Master's in Computer Science
           </i>
           </Paper>
         </Grid>
+        <Grid item xs={12} sm={6}>
+          <Paper className={classes.paper}>
+            GPA: 3.8/4.0
+          </Paper>
+        </Grid>
         <Grid item xs={12} sm={12}>
           <Paper className={classes.paper}>
             <b>
-              Current Coursework:
+              Coursework:
             </b>
-            {' '} Neural Networks, Computer Vision, Advanced Algorithms
+            {' '} Database Design, Distributed & O.S., Neural Networks, Computer Vision, Visual Computing
           </Paper>
         </Grid>
       </Grid>
-
+      <br />
       <Grid container spacing={1}>
         <Grid item xs={12} sm={6}>
           <Paper className={classes.paper}>

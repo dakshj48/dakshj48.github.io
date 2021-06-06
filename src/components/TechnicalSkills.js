@@ -24,15 +24,31 @@ const TechnicalSkills = () => {
             <b>
               Languages:
             </b> 
-            {' '} Java, Python, JavaScript, Scala, C#, C, C++, GraphQL, Matlab
+            {' '}
+            <i>
+              Proficient:
+            </i>
+            {' '} Java, Python, JavaScript {' '}
+            <i>
+              Familiar:
+            </i>
+            {' '} Scala, C#, C, C++, GraphQL, Matlab
           </Paper>
         </Grid>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <b>
-              Frameworks and Libraries:
+              Front-end:
             </b> 
-            {' '} React, Express, Node.js, Redux, scikit-learn, PyTorch, Flask, NumPy, Cypress
+            {' '} ReactJS, Redux, Cypress, Material-UI, Semantic-UI, HTML5, CSS3
+          </Paper>
+        </Grid>
+        <Grid item xs={12}>
+          <Paper className={classes.paper}>
+            <b>
+              Frameworks/Services:
+            </b> 
+            {' '} Relational Databases (PostgreSQL), NoSQL Databases (MongoDB), JVM, Docker, PyTorch, Express, Node.js, NumPy, scikit-learn, Flask, AWS EC2, Spark
           </Paper>
         </Grid>
         <Grid item xs={12}>
@@ -40,7 +56,23 @@ const TechnicalSkills = () => {
             <b>
               Tools:
             </b> 
-            {' '} git, MongoDB, Heroku, bash, Unity
+            {' '} Git, Linux, Bash, Heroku, Unity3D
+          </Paper>
+        </Grid>
+        <Grid item xs={12}>
+          <Paper className={classes.paper}>
+            <b>
+              Methodologies:
+            </b> 
+            {' '} Object oriented programming, Unit testing, RESTful API, Full-stack development, Version control
+          </Paper>
+        </Grid>
+        <Grid item xs={12}>
+          <Paper className={classes.paper}>
+            <b>
+              Soft skills:
+            </b> 
+            {' '} Communication, Collaboration, Leadership, Critical thinking
           </Paper>
         </Grid>
       </Grid>

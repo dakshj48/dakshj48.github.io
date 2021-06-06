@@ -13,6 +13,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Fab from '@material-ui/core/Fab';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import Tooltip from '@material-ui/core/Tooltip';
+import {Link} from 'react-scroll'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,12 +39,9 @@ const LeftAccordionSummary = withStyles({
     },
 })(AccordionSummary);
 
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
 const Resume = () => {  
   const classes = useStyles();
-  const ref = useRef(null)
-  const executeScroll = () => scrollToRef(ref)
 
   const handleChange = (panel) => (event, newExpanded) => {
     if (expanded.includes(panel)) {
@@ -51,7 +49,6 @@ const Resume = () => {
     }
     else {
       setExpanded(expanded.concat(panel));
-      executeScroll();
     }
   };
 
@@ -67,104 +64,143 @@ const Resume = () => {
         <Accordion
           expanded={expanded.includes('education')}
           onChange={handleChange('education')}
-          ref={ref}
         >
-          <LeftAccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls='panel1a-content'
-            id='education-header'
-            IconButtonProps={{edge: 'start'}}
+          <Link 
+            activeClass="active" 
+            to="education-header" 
+            spy={true} 
+            smooth={true}
           >
-            <Typography className={classes.heading}>
-              Education
-            </Typography>
-          </LeftAccordionSummary>
+            <LeftAccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls='panel1a-content'
+              id='education-header'
+              IconButtonProps={{edge: 'start'}}
+            >
+              <Typography className={classes.heading}>
+                Education
+              </Typography>
+            </LeftAccordionSummary>
+          </Link>
           <AccordionDetails>
             <Typography>
               <Education />
             </Typography>
           </AccordionDetails>
         </Accordion>
+
         <Accordion
           expanded={expanded.includes('experience')}
           onChange={handleChange('experience')}
         >
-          <LeftAccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls='panel1a-content'
-            id='experience-header'
-            IconButtonProps={{edge: 'start'}}
+          <Link 
+          activeClass="active" 
+          to="experience-header" 
+          spy={true} 
+          smooth={true}
           >
-            <Typography className={classes.heading}>
-              Experience
-            </Typography>
-          </LeftAccordionSummary>
+            <LeftAccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls='panel1a-content'
+              id='experience-header'
+              IconButtonProps={{edge: 'start'}}
+            >
+              <Typography className={classes.heading}>
+                Experience
+              </Typography>
+            </LeftAccordionSummary>
+          </Link>
           <AccordionDetails>
             <Typography>
               <Experience />
             </Typography>
           </AccordionDetails>
         </Accordion>
+        
         <Accordion
           expanded={expanded.includes('projects')}
           onChange={handleChange('projects')}
         >
-          <LeftAccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls='panel1a-content'
-            id='projects-header'
-            IconButtonProps={{edge: 'start'}}
+          <Link 
+          activeClass="active" 
+          to="projects-header" 
+          spy={true} 
+          smooth={true}
           >
-            <Typography className={classes.heading}>
-              Projects
-            </Typography>
-          </LeftAccordionSummary>
+            <LeftAccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls='panel1a-content'
+              id='projects-header'
+              IconButtonProps={{edge: 'start'}}
+            >
+              <Typography className={classes.heading}>
+                Projects
+              </Typography>
+            </LeftAccordionSummary>
+          </Link>
           <AccordionDetails>
             <Typography>
               <Projects />
             </Typography>
           </AccordionDetails>
         </Accordion>
+      
         <Accordion
           expanded={expanded.includes('technicalskills')}
           onChange={handleChange('technicalskills')}
         >
-          <LeftAccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls='panel1a-content'
-            id='technicalskills-header'
-            IconButtonProps={{edge: 'start'}}
+          <Link 
+          activeClass="active" 
+          to="technicalskills-header" 
+          spy={true} 
+          smooth={true}
           >
-            <Typography className={classes.heading}>
-              Technical Skills
-            </Typography>
-          </LeftAccordionSummary>
+            <LeftAccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls='panel1a-content'
+              id='technicalskills-header'
+              IconButtonProps={{edge: 'start'}}
+            >
+              <Typography className={classes.heading}>
+                Technical Skills
+              </Typography>
+            </LeftAccordionSummary>
+          </Link>
           <AccordionDetails>
             <Typography>
               <TechnicalSkills />
             </Typography>
           </AccordionDetails>
         </Accordion>
+        
         <Accordion
           expanded={expanded.includes('honors')}
           onChange={handleChange('honors')}
         >
-          <LeftAccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls='panel1a-content'
-            id='honorsandawards-header'
-            IconButtonProps={{edge: 'start'}}
+          <Link 
+          activeClass="active" 
+          to="honorsandawards-header" 
+          spy={true} 
+          smooth={true}
           >
-            <Typography className={classes.heading}>
-              Honors and Awards
-            </Typography>
-          </LeftAccordionSummary>
+            <LeftAccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls='panel1a-content'
+              id='honorsandawards-header'
+              IconButtonProps={{edge: 'start'}}
+            >
+              <Typography className={classes.heading}>
+                Honors and Awards
+              </Typography>
+            </LeftAccordionSummary>
+          </Link>
           <AccordionDetails>
             <Typography>
               <HonorsAndAwards />
             </Typography>
           </AccordionDetails>
         </Accordion>
+
         {
           expanded.length < 5 &&
           <Tooltip title='Expand All' aria-label='expand'>
