@@ -1,7 +1,7 @@
 {
   "name": "personal-website",
   "homepage": "https://dakshj.com",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",
@@ -13,7 +13,8 @@
     "react-dom": "^16.13.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "react-scroll": "^1.8.2"
   },
   "scripts": {
     "predeploy": "npm run clean && npm run build",
@@ -22,16 +23,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "clean" : "gh-pages-clean"
+    "clean": "gh-pages-clean"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "browserslist": {
     "production": [
-      ">0.2%",
+      ">0.3%",
       "not dead",
-      "not op_mini all"
+      "not op_mini all",
+      "not ie 11"
     ],
     "development": [
       "last 1 chrome version",

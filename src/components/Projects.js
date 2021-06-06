@@ -22,22 +22,26 @@ const Projects = () => {
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <b>
+              Full-stack web app for listing blogs
+            </b>
+            <div style={{float: 'right'}}>
               <a 
                 href='https://github.com/dakshj48/Bloglist' 
                 target='_blank' 
                 rel='noopener noreferrer'
+                style={{textDecoration: 'none'}}
               >
-                Full-stack web app for listing blogs
+                <i>
+                  Project link
+                </i>
               </a>
-            </b>
+            </div>
             <ul>
               <li>
-                Users can add links to blogs to the list, like and comment on existing blogs in the list and remove
-                the blogs that they have added.
+                Users can add links of blogs to the list, like and comment on existing blogs in the list and remove added blogs
               </li>
               <li>
-                Utilized MongoDB, Express, React and Node.js (MERN) for the development and Heroku to
-                deploy it to the web.
+                Utilized MongoDB, Express, React and Node.js (MERN) for development and Heroku for deployment
               </li>
             </ul>
           </Paper>
@@ -47,29 +51,24 @@ const Projects = () => {
             <b>
               Movie Plot Generator
             </b>
+            <div style={{float: 'right'}}>
+              <a 
+                href='https://colab.research.google.com/drive/1FHsFYf7P5pOL-URpOl5l_1ZlbflMTyG2?authuser=1' 
+                target='_blank' 
+                rel='noopener noreferrer'
+                style={{textDecoration: 'none'}}
+              >
+                <i>
+                  Project link
+                </i>
+              </a>
+            </div>
             <ul>
               <li>
-                Used NLP algorithms (
-                <a 
-                  href='https://colab.research.google.com/drive/1pdU-T8UZY4V3Iqls_uMWWK42zMvDd_EP' 
-                  target='_blank' 
-                  rel='noopener noreferrer'
-                > 
-                  n-grams, RNN
-                </a> 
-                {' '} and {' '}
-                <a 
-                  href='https://colab.research.google.com/drive/1FHsFYf7P5pOL-URpOl5l_1ZlbflMTyG2'
-                  target='_blank' 
-                  rel='noopener noreferrer'
-                >
-                  GPT-2
-                </a>
-                ) to generate movie plots given context and genre.
+                Worked in a team of 5 to generate movie plots given context and genre using NLP algorithms
               </li>
               <li>
-                Utilized Pytorch and Google Colab to meet the computational needs of learning data from
-                thousands of movies.
+                Harnessed Pytorch and Google Colab to meet the resources needed to learn the data from thousands of movies
               </li>
             </ul>
           </Paper>
@@ -77,18 +76,45 @@ const Projects = () => {
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <b>
-              N-puzzle Solver
+              8-D Music Converter
             </b>
+            <div style={{float: 'right'}}>
+              <a 
+                href='https://github.com/dakshj48/8D-Audio-Converter' 
+                target='_blank' 
+                rel='noopener noreferrer'
+                style={{textDecoration: 'none'}}
+              >
+                <i>
+                  Project link
+                </i>
+              </a>
+            </div>
             <ul>
               <li>
-                Designed an AI for solving N-puzzles using the Manhattan distance heuristic in Java.
+                A user-friendly application to convert audio files into 8-D audio files locally
               </li>
               <li>
-                Used data structures like hashmap to signicantly reduce the computation time.
+                Utilized open-source Python APIs for complex audio processing and Flask to receive and serve audio files
               </li>
             </ul>
           </Paper>
         </Grid>
+        {/* <Grid item xs={12}>
+          <Paper className={classes.paper}>
+            <b>
+              N-puzzle Solver
+            </b>
+            <ul>
+              <li>
+                Designed an AI for solving N-puzzles using the Manhattan distance heuristic using Java.
+              </li>
+              <li>
+                Used data structures like hashmap to significantly reduce the computation time.
+              </li>
+            </ul>
+          </Paper>
+        </Grid> */}
         <Grid item xs={12}>
           <Paper className={classes.paper}>
             <b>
@@ -96,12 +122,15 @@ const Projects = () => {
             </b>
             <ul>
               <li>
-                Established a communication between server and multiple clients using threads.
+                Established communication between a server and multiple clients using threads in C++ and Python
+              </li>
+              <li>
+                Features include hosting multiple rooms to which clients can connect and direct messaging between clients
               </li>
             </ul>
           </Paper>
         </Grid>
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <Paper className={classes.paper}>
             <b>
               Cache Simulator and Bank Simulator
@@ -115,7 +144,7 @@ const Projects = () => {
               </li>
             </ul>
           </Paper>
-        </Grid>
+        </Grid> */}
       </Grid>
     </div>
   )

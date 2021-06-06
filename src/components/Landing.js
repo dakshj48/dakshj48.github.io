@@ -38,12 +38,13 @@ const Landing = () => {
       </span>
       <br />
       <span align='center' className={classes.h2}>
-        Pursuing MS in CS at UMass, Amherst
+        SDE Intern at Mystry <br />
+        MS in CS at UMass, Amherst
       </span>
       <br />
       <br />
       <span align='center' style={{ fontSize: '125%' }}>
-        A result-oriented first year master's student who aspires to become a top software engineer. 
+        A result-oriented master's student who aspires to become a top software engineer. 
       </span>
       <br />
       <span align='center' style={{ fontSize: '125%' }}>
