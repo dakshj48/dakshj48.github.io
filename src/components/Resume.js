@@ -83,7 +83,7 @@ const Resume = () => {
             </LeftAccordionSummary>
           </Link>
           <AccordionDetails>
-            <Typography>
+            <Typography component={'div'}>
               <Education />
             </Typography>
           </AccordionDetails>
@@ -111,7 +111,7 @@ const Resume = () => {
             </LeftAccordionSummary>
           </Link>
           <AccordionDetails>
-            <Typography>
+            <Typography component={'div'}>
               <Experience />
             </Typography>
           </AccordionDetails>
@@ -139,7 +139,7 @@ const Resume = () => {
             </LeftAccordionSummary>
           </Link>
           <AccordionDetails>
-            <Typography>
+            <Typography component={'div'}>
               <Projects />
             </Typography>
           </AccordionDetails>
@@ -154,6 +154,7 @@ const Resume = () => {
           to="technicalskills-header" 
           spy={true} 
           smooth={true}
+          duration={1750}
           >
             <LeftAccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -167,7 +168,7 @@ const Resume = () => {
             </LeftAccordionSummary>
           </Link>
           <AccordionDetails>
-            <Typography>
+            <Typography component={'div'}>
               <TechnicalSkills />
             </Typography>
           </AccordionDetails>
@@ -182,6 +183,7 @@ const Resume = () => {
           to="honorsandawards-header" 
           spy={true} 
           smooth={true}
+          duration={2000}
           >
             <LeftAccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -189,13 +191,13 @@ const Resume = () => {
               id='honorsandawards-header'
               IconButtonProps={{edge: 'start'}}
             >
-              <Typography className={classes.heading}>
+              <Typography className={classes.heading} >
                 Honors and Awards
               </Typography>
             </LeftAccordionSummary>
           </Link>
           <AccordionDetails>
-            <Typography>
+            <Typography component={'div'}>
               <HonorsAndAwards />
             </Typography>
           </AccordionDetails>
@@ -203,11 +205,18 @@ const Resume = () => {
 
         {
           expanded.length < 5 &&
-          <Tooltip title='Expand All' aria-label='expand'>
-            <Fab color='secondary' className={classes.fab} onClick={expandAll}>
-              <ExpandMoreIcon />
-            </Fab>
-          </Tooltip>
+          <Link 
+            activeClass="active" 
+            to="education-header" 
+            spy={true} 
+            smooth={true}
+          >
+            <Tooltip title='Expand All' aria-label='expand'>
+                <Fab color='secondary' className={classes.fab} onClick={expandAll}>
+                  <ExpandMoreIcon />
+                </Fab>
+            </Tooltip>
+          </Link>
         }
         {
           expanded.length === 5 &&

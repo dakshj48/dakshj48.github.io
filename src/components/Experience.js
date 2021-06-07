@@ -43,7 +43,7 @@ const Experience = () => {
             June 2021 - Aug. 2021
           </Paper>
         </Grid>
-        <Grid item xs={6} sm={12}>
+        <Grid item xs={12} sm={12}>
           <Paper className={classes.paper}>
             <ul style={{textAlign: 'left'}}>
               <li>
@@ -92,7 +92,7 @@ const Experience = () => {
             Aug. 2020 - Dec. 2020
           </Paper>
         </Grid>
-        <Grid item xs={6} sm={12}>
+        <Grid item xs={12} sm={12}>
           <Paper className={classes.paper}>
             <ul style={{textAlign: 'left'}}>
               <li>
@@ -134,7 +134,7 @@ const Experience = () => {
             Jan. 2019 - May 2019
           </Paper>
         </Grid>
-        <Grid item xs={6} sm={12}>
+        <Grid item xs={12} sm={12}>
           <Paper className={classes.paper}>
             <ul style={{textAlign: 'left'}}>
               <li>
