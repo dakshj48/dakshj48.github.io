@@ -212,16 +212,9 @@ const Resume = () => {
             smooth={true}
             >
           <Tooltip title='Expand All' aria-label='expand'>
-            {/* <Link 
-            activeClass="active" 
-            to="education-header" 
-            spy={true} 
-            smooth={true}
-            > */}
               <Fab color='secondary' className={classes.fab} onClick={expandAll}>
                 <ExpandMoreIcon />
               </Fab>
-            {/* </Link> */}
           </Tooltip>
           </Link>
         }
