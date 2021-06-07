@@ -70,6 +70,7 @@ const Resume = () => {
             to="education-header" 
             spy={true} 
             smooth={true}
+            easeOutQuint={true}
           >
             <LeftAccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -94,10 +95,11 @@ const Resume = () => {
           onChange={handleChange('experience')}
         >
           <Link 
-          activeClass="active" 
-          to="experience-header" 
-          spy={true} 
-          smooth={true}
+            activeClass="active" 
+            to="experience-header" 
+            spy={true} 
+            smooth={true}
+            easeOutQuint={true}
           >
             <LeftAccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -122,10 +124,11 @@ const Resume = () => {
           onChange={handleChange('projects')}
         >
           <Link 
-          activeClass="active" 
-          to="projects-header" 
-          spy={true} 
-          smooth={true}
+            activeClass="active" 
+            to="projects-header" 
+            spy={true} 
+            smooth={true}
+            easeOutQuint={true}
           >
             <LeftAccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -150,11 +153,11 @@ const Resume = () => {
           onChange={handleChange('technicalskills')}
         >
           <Link 
-          activeClass="active" 
-          to="technicalskills-header" 
-          spy={true} 
-          smooth={true}
-          duration={1750}
+            activeClass="active" 
+            to="technicalskills-header" 
+            spy={true} 
+            smooth={true}
+            easeOutQuint={true}
           >
             <LeftAccordionSummary
               expandIcon={<ExpandMoreIcon />}
@@ -179,11 +182,11 @@ const Resume = () => {
           onChange={handleChange('honors')}
         >
           <Link 
-          activeClass="active" 
-          to="honorsandawards-header" 
-          spy={true} 
-          smooth={true}
-          duration={2000}
+            activeClass="active" 
+            to="honorsandawards-header" 
+            spy={true} 
+            smooth={true}
+            easeOutQuint={true}
           >
             <LeftAccordionSummary
               expandIcon={<ExpandMoreIcon />}
