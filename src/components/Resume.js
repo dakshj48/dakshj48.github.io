@@ -210,12 +210,12 @@ const Resume = () => {
             to="education-header" 
             spy={true} 
             smooth={true}
-            >
-          <Tooltip title='Expand All' aria-label='expand'>
-              <Fab color='secondary' className={classes.fab} onClick={expandAll}>
-                <ExpandMoreIcon />
-              </Fab>
-          </Tooltip>
+          >
+            <Tooltip title='Expand All' aria-label='expand'>
+                <Fab color='secondary' className={classes.fab} onClick={expandAll}>
+                  <ExpandMoreIcon />
+                </Fab>
+            </Tooltip>
           </Link>
         }
         {
