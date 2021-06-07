@@ -46,6 +46,7 @@ const Contacts = () => {
                 href='https://www.linkedin.com/in/jain-daksh/' 
                 target='_blank' 
                 rel='noopener noreferrer'
+                style={{textDecoration: 'none'}}
               >
                 <Button
                   color='default'
@@ -61,6 +62,7 @@ const Contacts = () => {
                 href='https://github.com/dakshj48' 
                 target='_blank' 
                 rel='noopener noreferrer'
+                style={{textDecoration: 'none'}}
               >
                 <Button
                   color='default'
@@ -72,7 +74,10 @@ const Contacts = () => {
               </a>
             </NoBorderTableCell>
             <NoBorderTableCell align='center'>
-              <a href='mailto:dakshjain@umass.edu'>
+              <a 
+                href='mailto:dakshjain@umass.edu'
+                style={{textDecoration: 'none'}}
+              >
                 <Button
                   color='default'
                   startIcon={<EmailIcon />}
@@ -83,7 +88,10 @@ const Contacts = () => {
               </a>
             </NoBorderTableCell>
             <NoBorderTableCell align='center'>
-              <a href='tel:+13123699090'>
+              <a 
+                href='tel:+13123699090'
+                style={{textDecoration: 'none'}}
+              >
                 <Button
                   color='default'
                   startIcon={<PhoneIcon />}
